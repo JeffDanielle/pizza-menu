@@ -17,9 +17,12 @@ const pizzaRender = () => {
     return (
         <main className="menu">
             <h2>Our Menu</h2>
-            <ul className="pizzas">
-                {listOfPizza}
-            </ul>
+
+            {pizzaData.length > 0 ? (
+                <ul className="pizzas">
+                    {listOfPizza}
+                </ul>) : "We're still working on our menu!. Please come back later :)"
+            }
         </main>
     );
 }
