@@ -5,18 +5,21 @@ const pizzaRender = () => {
     const [pizzaData, setPizzaData] = useState(data)
     const listOfPizza = pizzaData.map((item) => {
         return (
-            <Pizza
-                photoName={item.photoName}
-                name={item.name}
-                price={item.price}
-                ingredients={item.ingredients}
-            />
+            <Pizza pizzaObj={item} key={item.name} />
+            // <Pizza
+            //     photoName={item.photoName}
+            //     name={item.name}
+            //     price={item.price}
+            //     ingredients={item.ingredients}
+            // />
         )
     })
     return (
         <main className="menu">
             <h2>Our Menu</h2>
-            {listOfPizza}
+            <ul className="pizzas">
+                {listOfPizza}
+            </ul>
         </main>
     );
 }
