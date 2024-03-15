@@ -1,14 +1,16 @@
 import './App.css'
+import Pizza from "./components/PizzaData";
 
 function App() {
 
   return (
     <>
-      <div className='text-3xl underline'>
-        Hello World!
+      <div>
+        <Pizza />
       </div>
     </>
   )
 }
+
 
 export default App
