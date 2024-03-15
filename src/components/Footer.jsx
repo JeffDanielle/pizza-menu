@@ -14,7 +14,7 @@ const Footer = () => {
     //     alert("We're currently closed!")
     // }
     return (
-        <footer className="text-xl text-center mt-10 font-bold">{timeNow}. We're currently open!</footer>
+        <footer className="footer">{timeNow}. We're currently open!</footer>
     );
 }
 
