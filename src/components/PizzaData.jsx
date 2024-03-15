@@ -14,6 +14,7 @@ const pizzaRender = () => {
     })
     return (
         <>
+            <h1 className="text-2xl mt-5">Our Menu</h1>
             {listOfPizza}
         </>
     );
