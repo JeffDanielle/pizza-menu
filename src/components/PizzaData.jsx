@@ -8,6 +8,7 @@ const pizzaRender = () => {
             <Pizza
                 photoName={item.photoName}
                 name={item.name}
+                price={item.price}
                 ingredients={item.ingredients}
             />
         )

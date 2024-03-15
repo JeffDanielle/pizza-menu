@@ -2,11 +2,14 @@ const pizzaComponent = (props) => {
 
     return (
         <>
-            <main className="menu">
+            <div className="pizza">
                 <img src={props.photoName} alt="pizza image" />
-                <h3 className="text-start font-bold">{props.name}</h3>
-                <p className="text-start">{props.ingredients}</p>
-            </main>
+                <div>
+                    <h3 className="text-start font-bold">{props.name}</h3>
+                    <p className="text-start">{props.ingredients}</p>
+                    <span>{props.price + 3}</span>
+                </div>
+            </div>
         </>
     );
 }
