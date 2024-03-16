@@ -8,6 +8,10 @@ const Footer = () => {
     const timeNow = `${hr}:${min}:${sec}`
     const isOpen = hr >= openHr && hr <= closeHr
 
+    // if (!isOpen) {
+    //     return <p>We're happy to welcome you between {openHr}:00 and {closeHr}:00</p>
+    // }
+
     return (
         <footer className="footer">
             {isOpen ? (
