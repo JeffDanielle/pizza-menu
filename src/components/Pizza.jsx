@@ -1,15 +1,15 @@
-const pizzaComponent = ({ pizzaObj }) => {
+const pizzaComponent = ({ soldOut, photoName, name, ingredients, price }) => {
 
     // if (pizzaObj.soldOut) return null;
 
     return (
         <>
-            <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
-                <img src={pizzaObj.photoName} alt="pizza image" />
+            <li className={`pizza ${soldOut ? "sold-out" : ""}`}>
+                <img src={photoName} alt="pizza image" />
                 <div>
-                    <h3 className="text-start font-bold">{pizzaObj.name}</h3>
-                    <p className="text-start">{pizzaObj.ingredients}</p>
-                    <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price}</span>
+                    <h3 className="text-start font-bold">{name}</h3>
+                    <p className="text-start">{ingredients}</p>
+                    <span>{soldOut ? "SOLD OUT" : price}</span>
                 </div>
             </li>
         </>
