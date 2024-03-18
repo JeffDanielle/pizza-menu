@@ -1,8 +1,4 @@
-# React + Vite
+# Udemy Course Section 5(Pizza Menu Project Challenge)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This section mainly focus on Props, Components, JSX rules, using MAP to iterate an object array
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
